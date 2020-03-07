@@ -1,0 +1,21 @@
+https://www.youtube.com/watch?v=Z1RJmh_OqeA
+
+12:06
+
+https://medium.com/bhavaniravi/build-your-1st-python-web-app-with-flask-b039d11f101c
+
+to create venv called env:
+    python -m venv env
+
+to activate env:
+    env/Scripts/activate
+
+once activated:
+    pip install flask
+    pip install flask-sqlalchemy    - if you want to use it instead of sqlite 3
+
+to deactivate env:
+    deactivate
+
+to run flask app:
+    python app.py
