@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=Z1RJmh_OqeA
+git https://www.youtube.com/watch?v=Z1RJmh_OqeA
 
 12:06
 
@@ -19,3 +19,4 @@ to deactivate env:
 
 to run flask app:
     python app.py
+
