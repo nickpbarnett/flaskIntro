@@ -2,7 +2,6 @@ git https://www.youtube.com/watch?v=Z1RJmh_OqeA
 
 12:06
 
-https://medium.com/bhavaniravi/build-your-1st-python-web-app-with-flask-b039d11f101c
 
 to create venv called env:
     python -m venv env
