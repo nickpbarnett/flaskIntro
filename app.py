@@ -14,9 +14,8 @@ class Todo(db.Model):
 
     def __repr__(self):
         #return '<Task %r>' %self.id
-        return 'Task ' + str(self.id) 
-
-
+        return 'Task ' + str(self.id)    #why needed??
+         
 @app.route('/', methods=['POST','GET'])
 def index():
     if request.method=='POST':
@@ -30,9 +29,8 @@ def index():
         except:
             return "That didn't work!!!!!"
     else:
-        tasks=Todo.query.order_by(Todo.date_created).all()
+        tasks=Todo.query.order_by(Todo.id).all()
         return render_template('index.html', tasks=tasks)
-
 
 if __name__ == "__main__":
     app.run(debug=True)

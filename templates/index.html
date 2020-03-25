@@ -11,14 +11,16 @@
      <h1>Task Master</h1>
      <table>
        <tr>
+         <th>ID</th>
          <th>Task</th>
          <th>Added</th>
          <th>Actions</th>
        </tr>
        {% for task in tasks%}
           <tr>
+            <td>{{ task.id }}</td>
             <td>{{ task.content }}</td>
-            <td>{{ task.date_created }}</td>
+            <td>{{ task.date_created.strftime('%d %B %Y - %H:%M:%S') }}</td>
             <td>
               <a href="#">Delete</a>
               <br>
@@ -29,7 +31,7 @@
      </table>
 
      <form action="/" method="POST">
-        <input type="text" name='content' id='content'>
+        <input type="text" name='content' id='cont'>
         <input type="submit" value="Add Task">
      </form>
 

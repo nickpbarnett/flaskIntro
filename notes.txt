@@ -1,6 +1,10 @@
-git https://www.youtube.com/watch?v=Z1RJmh_OqeA
+git https://www.you
+tube.com/watch?v=Z1RJmh_OqeA
 
 29:39
+
+worth looking at after? https://www.youtube.com/watch?v=3mwFC4SHY-Y
+
 
 
 to create venv called env:
@@ -18,4 +22,13 @@ to deactivate env:
 
 to run flask app:
     python app.py
+
+
+to create new db:
+    1. enter python3 shell via command line (make sure venv running)
+    2. from shell
+        from app import db
+        db.create_all()
+        exit()
+        
 
